@@ -41,32 +41,37 @@ function mwpfm_render_settings_page() {
 
 		<?php settings_errors( MWPFM_OPTION_FIELDS ); ?>
 
-		<form method="post" action="options.php">
-			<?php settings_fields( MWPFM_SETTINGS_GROUP ); ?>
+		<table class="form-table" role="presentation">
+			<tr>
+				<th scope="row">
+					<label for="mwpfm_prerelease_db_flag">
+						<?php esc_html_e( 'Release Channel', 'mainwp-field-manager' ); ?>
+					</label>
+				</th>
+				<td>
+					<select
+						id="mwpfm_prerelease_db_flag"
+						name="<?php echo esc_attr( MWPFM_OPTION_PLUGIN_SETTINGS . '[prerelease_db_flag]' ); ?>"
+					>
+						<option value="stable" <?php selected( $settings['prerelease_db_flag'], 'stable' ); ?>>
+							<?php esc_html_e( 'Stable (Recommended)', 'mainwp-field-manager' ); ?>
+						</option>
+						<option value="dev" <?php selected( $settings['prerelease_db_flag'], 'dev' ); ?>>
+							<?php esc_html_e( 'Early Access (Dev)', 'mainwp-field-manager' ); ?>
+						</option>
+					</select>
 
-			<table class="form-table" role="presentation">
-				<tr>
-					<th scope="row">
-						<label for="mwpfm_prerelease_db_flag"><?php esc_html_e( 'Prerelease Database Flag', 'mainwp-field-manager' ); ?></label>
-					</th>
-					<td>
-						<select id="mwpfm_prerelease_db_flag" name="<?php echo esc_attr( MWPFM_OPTION_PLUGIN_SETTINGS . '[prerelease_db_flag]' ); ?>">
-							<option value="stable" <?php selected( $settings['prerelease_db_flag'], 'stable' ); ?>>
-								<?php esc_html_e( 'Stable', 'mainwp-field-manager' ); ?>
-							</option>
-							<option value="dev" <?php selected( $settings['prerelease_db_flag'], 'dev' ); ?>>
-								<?php esc_html_e( 'Dev', 'mainwp-field-manager' ); ?>
-							</option>
-						</select>
-						<p class="description">
-							<?php esc_html_e( 'Use this flag to indicate which prerelease database stream this install is using.', 'mainwp-field-manager' ); ?>
-						</p>
-					</td>
-				</tr>
-			</table>
+					<p class="description">
+						<?php esc_html_e(
+							'Choose how you receive updates. Stable provides fully tested releases. Early Access gives you the latest features and improvements before release, but may include unfinished or experimental changes.',
+							'mainwp-field-manager'
+						); ?>
+					</p>
+				</td>
+			</tr>
+		</table>
 
-			<?php submit_button( __( 'Save Settings', 'mainwp-field-manager' ) ); ?>
-		</form>
+		<?php submit_button( __( 'Save Settings', 'mainwp-field-manager' ) ); ?>
 
 		<hr />
 
