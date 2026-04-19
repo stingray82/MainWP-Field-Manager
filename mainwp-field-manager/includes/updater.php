@@ -275,7 +275,7 @@
  *   add_action( 'plugins_loaded', function() {
  *       require_once __DIR__ . '/includes/updater.php';
  *
- *       \UUPD\V2\UUPD_Updater_V2::register( [
+ *       \UUPD\V2\Updater_V2::register( [
  *           'vendor'      => 'tdlab',
  *           'plugin_file' => plugin_basename( __FILE__ ),
  *           'slug'        => 'my-plugin-slug',
@@ -292,7 +292,7 @@
  *       require_once get_stylesheet_directory() . '/includes/updater.php';
  *
  *       add_action( 'admin_init', function() {
- *           \UUPD\V2\UUPD_Updater_V2::register( [
+ *           \UUPD\V2\Updater_V2::register( [
  *               'vendor'       => 'tdlab',
  *               'slug'         => 'my-theme-folder',
  *               'real_slug'    => 'my-theme-folder',
@@ -330,13 +330,13 @@
  * • Uses vendor + slug scoped identity to avoid collisions
  * • Zero dependencies, safe to bundle anywhere
  *
- * @package UUPD\V2
+ * @package RUP\Updater
  */
-namespace UUPD\V2;
+namespace RUP\Updater;
 
-if ( ! class_exists( __NAMESPACE__ . '\UUPD_Updater_V2' ) ) {
+if ( ! class_exists( __NAMESPACE__ . '\Updater_V2' ) ) {
 
-	class UUPD_Updater_V2 {
+	class Updater_V2 {
 
 		const VERSION = '2.0.0-beta';
 
@@ -449,12 +449,12 @@ if ( ! class_exists( __NAMESPACE__ . '\UUPD_Updater_V2' ) ) {
 			$config['slug']   = self::sanitize_identity_part( $config['slug'] ?? '' );
 
 			if ( $config['vendor'] === '' ) {
-				_doing_it_wrong( __METHOD__, __( 'Missing vendor in UUPD_Updater_V2 configuration.', 'default' ), self::VERSION );
+				_doing_it_wrong( __METHOD__, __( 'Missing vendor in Updater_V2 configuration.', 'default' ), self::VERSION );
 				return;
 			}
 
 			if ( $config['slug'] === '' ) {
-				_doing_it_wrong( __METHOD__, __( 'Missing slug in UUPD_Updater_V2 configuration.', 'default' ), self::VERSION );
+				_doing_it_wrong( __METHOD__, __( 'Missing slug in Updater_V2 configuration.', 'default' ), self::VERSION );
 				return;
 			}
 
@@ -485,7 +485,7 @@ if ( ! class_exists( __NAMESPACE__ . '\UUPD_Updater_V2' ) ) {
 			);
 
 			$this->config = $config;
-			$this->log( '✓ Using UUPD_Updater_V2 version ' . self::VERSION );
+			$this->log( '✓ Using Updater_V2 version ' . self::VERSION );
 			$this->register_hooks();
 		}
 
@@ -1427,7 +1427,7 @@ if ( ! class_exists( __NAMESPACE__ . '\UUPD_Updater_V2' ) ) {
 			$config['slug']   = self::sanitize_identity_part( $config['slug'] ?? '' );
 
 			if ( $config['vendor'] === '' || $config['slug'] === '' ) {
-				_doing_it_wrong( __METHOD__, __( 'UUPD_Updater_V2::register() requires both vendor and slug.', 'default' ), self::VERSION );
+				_doing_it_wrong( __METHOD__, __( 'Updater_V2::register() requires both vendor and slug.', 'default' ), self::VERSION );
 				return;
 			}
 
