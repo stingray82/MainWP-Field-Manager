@@ -5,7 +5,7 @@
  * Tested up to:      6.9.4
  * Requires at least: 6.5
  * Requires PHP:      8.0
- * Version:           1.0.0-beta.1
+ * Version:           1.0.0-beta.2
  * Author:            Reallyusefulplugins.com
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL3
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define('MWPFM_VERSION', '1.0.0-beta.1');
+define('MWPFM_VERSION', '1.0.0-beta.2');
 define( 'MWPFM_PLUGIN_FILE', __FILE__ );
 define( 'MWPFM_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
