@@ -1,0 +1,26 @@
+{
+    "slug": "MainWP-Field-Manager",
+    "name": "MainWP Field Manager",
+    "version": "1.0.0-beta",
+    "author": "Reallyusefulplugins.com",
+    "author_homepage": "https://reallyusefulplugins.com",
+    "requires_php": "8.0",
+    "requires": "6.5",
+    "tested": "6.9.4",
+    "sections": {
+        "description": "Install on your MainWP dashboard site and allows you to add additional options for your storing information against client sites",
+        "installation": "1. Upload the `mainwp-field-manager` folder to the `/wp-content/plugins/` directory.<br />\n2. Activate the plugin through the 'Plugins' menu in WordPress.<br />\n3. Configure the plugin settings it is located in the top level menu MainWP Field Manager",
+        "frequently_asked_questions": "",
+        "changelog": "<li>1.0.0-Beta</li><li>Initial Release of Plugin</li>"
+    },
+    "last_updated": "2026-04-19 14:37:16",
+    "download_url": "https://github.com/stingray82/MainWP-Field-Manager/releases/latest/download/mainwp-field-manager.zip",
+    "banners": {
+        "low": "https://raw.githubusercontent.com/stingray82/MainWP-Field-Manager/main/uupd/banner-772x250.png",
+        "high": "https://raw.githubusercontent.com/stingray82/MainWP-Field-Manager/main/uupd/banner-1544x500.png"
+    },
+    "icons": {
+        "1x": "https://raw.githubusercontent.com/stingray82/MainWP-Field-Manager/main/uupd/icon-128.png",
+        "2x": "https://raw.githubusercontent.com/stingray82/MainWP-Field-Manager/main/uupd/icon-256.png"
+    }
+}
