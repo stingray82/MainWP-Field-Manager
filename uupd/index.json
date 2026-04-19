@@ -1,7 +1,7 @@
 {
     "slug": "MainWP-Field-Manager",
     "name": "MainWP Field Manager",
-    "version": "1.0.0-beta",
+    "version": "1.0.0-beta.1",
     "author": "Reallyusefulplugins.com",
     "author_homepage": "https://reallyusefulplugins.com",
     "requires_php": "8.0",
@@ -13,7 +13,7 @@
         "frequently_asked_questions": "",
         "changelog": "<li>1.0.0-Beta</li><li>Initial Release of Plugin</li>"
     },
-    "last_updated": "2026-04-19 14:37:16",
+    "last_updated": "2026-04-19 14:38:49",
     "download_url": "https://github.com/stingray82/MainWP-Field-Manager/releases/latest/download/mainwp-field-manager.zip",
     "banners": {
         "low": "https://raw.githubusercontent.com/stingray82/MainWP-Field-Manager/main/uupd/banner-772x250.png",
