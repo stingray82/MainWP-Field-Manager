@@ -2,10 +2,10 @@
 /**
  * Plugin Name:       MainWP Field Manager
  * Description:       Adds configurable custom fields to MainWP sites, overview widgets, and bulk editing tools.
- * Tested up to:      6.9.4
+ * Tested up to:      7.0
  * Requires at least: 6.5
  * Requires PHP:      8.0
- * Version:           1.0.0-beta.4
+ * Version:           1.0.0-RC
  * Author:            Reallyusefulplugins.com
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL3
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define('MWPFM_VERSION', '1.0.0-beta.4');
+define('MWPFM_VERSION', '1.0.0-RC');
 define( 'MWPFM_PLUGIN_FILE', __FILE__ );
 define( 'MWPFM_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
