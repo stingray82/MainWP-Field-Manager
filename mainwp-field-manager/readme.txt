@@ -3,8 +3,8 @@ Contributors: reallyusefulplugins
 Donate link: https://reallyusefulplugins.com/donate
 Tags: MainWP, Field Manager
 Requires at least: 6.5
-Tested up to: 7.0
-Stable tag: 1.0.0-RC
+Tested up to: 7.0.2
+Stable tag: 1.0.0
 Requires PHP: 8.0
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -22,6 +22,10 @@ Install on your MainWP dashboard site and allows you to add additional options f
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.0 July 2026 =
+Release:  Stable
+Updated: UUPD Dependency Updated to Version 2.0 Stable
+
 1.0.0-RC
 Release Candidate
 

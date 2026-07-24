@@ -1,19 +1,19 @@
 {
     "slug": "MainWP-Field-Manager",
     "name": "MainWP Field Manager",
-    "version": "1.0.0-RC",
+    "version": "1.0.0",
     "author": "Reallyusefulplugins.com",
     "author_homepage": "https://reallyusefulplugins.com",
     "requires_php": "8.0",
     "requires": "6.5",
-    "tested": "7.0",
+    "tested": "7.0.2",
     "sections": {
         "description": "Install on your MainWP dashboard site and allows you to add additional options for your storing information against client sites",
         "installation": "1. Upload the `mainwp-field-manager` folder to the `/wp-content/plugins/` directory.<br />\n2. Activate the plugin through the 'Plugins' menu in WordPress.<br />\n3. Configure the plugin settings it is located in the top level menu MainWP Field Manager",
         "frequently_asked_questions": "",
-        "changelog": "<li>1.0.0-RC</li><li>Release Candidate</li><li>1.0.0-Beta</li><li>Initial Release of Plugin</li>"
+        "changelog": "<h4>1.0 July 2026</h4><ul><li>Release:  Stable</li><li>Updated: UUPD Dependency Updated to Version 2.0 Stable</li><li>1.0.0-RC</li><li>Release Candidate</li><li>1.0.0-Beta</li><li>Initial Release of Plugin</li></ul>"
     },
-    "last_updated": "2026-06-08 18:31:29",
+    "last_updated": "2026-07-24 09:17:12",
     "download_url": "https://github.com/stingray82/MainWP-Field-Manager/releases/latest/download/mainwp-field-manager.zip",
     "banners": {
         "low": "https://raw.githubusercontent.com/stingray82/MainWP-Field-Manager/main/uupd/banner-772x250.png",
